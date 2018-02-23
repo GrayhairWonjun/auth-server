@@ -1,0 +1,42 @@
+POST http://localhost:8088/oauth/token
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+###
+
+POST http://localhost:8088/oauth/token
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&username=onejune&password=test
+
+###
+POST http://localhost:8088/oauth/token
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=refresh_token&refresh_token=63bb91c9-f332-4a1f-ad10-7a37b680cffb&client_id=trusted-app&client_secret=trusted
+
+###
+
+POST http://localhost:8088/oauth/token
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code=NsDkjZ&redirect_uri=http%3A%2F%2Flocalhost%3A8088%2Fredirect
+
+###
+
+GET http://localhost:8088/oauth/token_key
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+
+###
+
+POST http://localhost:8088/oauth/check_token
+Authorization: Basic dHJ1c3RlZC1hcHA6dHJ1c3RlZA==
+Content-Type: application/x-www-form-urlencoded
+
+token=a238f9b3-b4eb-40bc-97d9-432a8d48b3d1
+
+###
