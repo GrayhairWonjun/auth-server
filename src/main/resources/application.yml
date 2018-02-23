@@ -1,0 +1,7 @@
+server:
+  port: 8088
+security:
+  user:
+    name: onejune
+    password: test
+    role: USER
